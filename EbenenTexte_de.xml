@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by GenerateEbenenTextsInXML.php -->
+<EbenenTexte lang="de">
+	<fcttyp id="-1">
+		<ebene id="0">NV's</ebene>
+	</fcttyp>
+	<fcttyp id="0">
+	</fcttyp>
+	<fcttyp id="4">
+		<ebene id="97">Betriebswahl</ebene>
+		<ebene id="98">Uhrzeit / Datum</ebene>
+		<ebene id="99">Modulfunktionen</ebene>
+		<ebene id="100">Weiche- Puffertemperatur</ebene>
+		<ebene id="101">Folgeschaltung</ebene>
+		<ebene id="102">Warmwasserladung</ebene>
+		<ebene id="103">LON-Systemdaten</ebene>
+		<ebene id="104">Weiche- Puffertemperaturen</ebene>
+		<ebene id="105">Sollwert-Offset</ebene>
+		<ebene id="106">Sollwert Wärmeerzeuger</ebene>
+		<ebene id="107">Zusatzkessel ZSK</ebene>
+		<ebene id="108">Pumpe ZSK</ebene>
+		<ebene id="109">Kesseltemperatur ZSK</ebene>
+		<ebene id="111">Modulinfo</ebene>
+	</fcttyp>
+	<fcttyp id="9">
+		<ebene id="155">Titelbild</ebene>
+		<ebene id="156">Infoebene</ebene>
+		<ebene id="157">Betreiberebene</ebene>
+		<ebene id="158">Serviceebene</ebene>
+	</fcttyp>
+	<fcttyp id="10">
+		<ebene id="155">Titelbild</ebene>
+		<ebene id="156">Infoebene</ebene>
+		<ebene id="157">Betreiberebene</ebene>
+		<ebene id="158">Serviceebene</ebene>
+	</fcttyp>
+	<fcttyp id="14">
+		<ebene id="96">Betriebswahl</ebene>
+		<ebene id="97">Behaglichkeit</ebene>
+		<ebene id="98">WW-Ladefreigabe</ebene>
+		<ebene id="99">Eco / Party</ebene>
+		<ebene id="100">Ferienprogramm</ebene>
+		<ebene id="101">Raumtemperatur-Sollwerte</ebene>
+		<ebene id="102">Uhrzeit / Datum</ebene>
+		<ebene id="103">Modulfunktionen</ebene>
+		<ebene id="104">Auslegungstemperaturen</ebene>
+		<ebene id="105">Raumtemperatureinfluss</ebene>
+		<ebene id="106">Heizgrenzen</ebene>
+		<ebene id="107">Warmwasserladung</ebene>
+		<ebene id="108">Kesseltemp-Überhöhung</ebene>
+		<ebene id="109">Startoptimierung</ebene>
+		<ebene id="110">LON-Systemdaten</ebene>
+		<ebene id="111">Estrichausheizprogramm</ebene>
+		<ebene id="112">Modulinfo</ebene>
+		<ebene id="113">Raumtemperatur</ebene>
+		<ebene id="114">Warmwassertemperatur</ebene>
+		<ebene id="115">Aussentemperatur</ebene>
+		<ebene id="116">Vorlauftemperatur</ebene>
+		<ebene id="117">Kesseltemperatur</ebene>
+		<ebene id="118">Puffertemperatur</ebene>
+		<ebene id="119">Frostschutzgrenzen</ebene>
+		<ebene id="120">Heizkreis</ebene>
+		<ebene id="121">WW-Ladung</ebene>
+	</fcttyp>
+	<fcttyp id="15">
+		<ebene id="96">Betriebswahl</ebene>
+		<ebene id="97">Anlagekonfiguration</ebene>
+		<ebene id="98">Modulfunktionen</ebene>
+		<ebene id="99">Puffertemperatur</ebene>
+		<ebene id="100">Kesseltemperatur</ebene>
+		<ebene id="101">Umschaltventil</ebene>
+		<ebene id="102">Schichtladung</ebene>
+		<ebene id="103">Fühleranschluss Y3</ebene>
+		<ebene id="104">Puffertemperatur</ebene>
+		<ebene id="105">Kesseltemperatur</ebene>
+		<ebene id="106">Hysterese TPOmin</ebene>
+		<ebene id="107">Umschaltverzögerung</ebene>
+		<ebene id="108">Modulinfo</ebene>
+	</fcttyp>
+	<fcttyp id="16">
+		<ebene id="96">Betriebswahl</ebene>
+		<ebene id="97">Modulfunktionen</ebene>
+		<ebene id="98">Kessel- Puffertemperatur</ebene>
+		<ebene id="99">Brennersteuerung</ebene>
+		<ebene id="100">Pufferladepumpe</ebene>
+		<ebene id="101">Ext. Wärmeanforderung</ebene>
+		<ebene id="102">Modulinfo</ebene>
+		<ebene id="103">Kesseltemperatur</ebene>
+		<ebene id="104">Puffertemperaturen</ebene>
+		<ebene id="105">WE-Pumpe</ebene>
+		<ebene id="106">WW-Ladung</ebene>
+	</fcttyp>
+	<fcttyp id="20">
+		<ebene id="97">Info</ebene>
+		<ebene id="98">Pumpensteuerung</ebene>
+		<ebene id="99">Ext. Wärmeanforderung</ebene>
+		<ebene id="100">Summenstörmeldung</ebene>
+		<ebene id="101">Modulfunktionen</ebene>
+		<ebene id="102">Aktorentest</ebene>
+	</fcttyp>
+</EbenenTexte>

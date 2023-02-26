@@ -1,0 +1,1259 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 9,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "yellow",
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 0,
+          "y": 0
+        },
+        "id": 7,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.UMUMLZ.1_Neubau.Raumtemperatur.Aktueller_Wert"
+          }
+        ],
+        "title": "Raumtemperatur Neubau",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "light-yellow",
+              "mode": "fixed"
+            },
+            "decimals": 2,
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 3,
+          "y": 0
+        },
+        "id": 8,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.UMUMLZ.2_Altbau.Raumtemperatur.Aktueller_Wert"
+          }
+        ],
+        "title": "Raumtemperatur Altbau",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "blue",
+              "mode": "fixed"
+            },
+            "decimals": 2,
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 6,
+          "y": 0
+        },
+        "id": 10,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.UMUMLZ.2_Altbau.Aussentemperatur.Aussentemperatur"
+          }
+        ],
+        "title": "Außentemperatur",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "mappings": [],
+            "max": 100,
+            "min": 0,
+            "thresholds": {
+              "mode": "percentage",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "orange",
+                  "value": 70
+                },
+                {
+                  "color": "red",
+                  "value": 85
+                }
+              ]
+            },
+            "unit": "%"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 9,
+          "y": 0
+        },
+        "id": 9,
+        "options": {
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showThresholdLabels": false,
+          "showThresholdMarkers": true
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Aktuelle_Kesselleistung"
+          }
+        ],
+        "title": "Kesselleistung",
+        "type": "gauge"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "‎ h"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 12,
+          "y": 0
+        },
+        "id": 11,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Betriebsstunden"
+          }
+        ],
+        "title": "Betriebsstunden",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "‎ h"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 15,
+          "y": 0
+        },
+        "id": 12,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Laufzeit_bis_Hauptreinigung"
+          }
+        ],
+        "title": "Zeit bis Hauptreinigung",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "‎ h"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 18,
+          "y": 0
+        },
+        "id": 13,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Laufzeit_bis_Reinigung"
+          }
+        ],
+        "title": "Zeit bis Reinigung",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "‎ h"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 21,
+          "y": 0
+        },
+        "id": 14,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Laufzeit_bis_Wartung"
+          }
+        ],
+        "title": "Zeit bis Wartung",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisLabel": "",
+              "axisPlacement": "right",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 12,
+              "gradientMode": "hue",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineInterpolation": "linear",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": 3600000,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.BioWINII.BioWINII.Titelbild.Kesseltemperatur_Istwert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Kessel IST"
+                },
+                {
+                  "id": "custom.lineWidth",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Aktueller_Wert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Vorlauf IST"
+                },
+                {
+                  "id": "custom.lineWidth",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Sollwert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Vorlauf SOLL"
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Warmwassertemperatur.Aktueller_Wert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Warmasser IST"
+                },
+                {
+                  "id": "custom.lineWidth",
+                  "value": 3
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "dark-orange",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Warmwassertemperatur.Sollwert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Warmwasser SOLL"
+                },
+                {
+                  "id": "custom.lineStyle",
+                  "value": {
+                    "dash": [
+                      10,
+                      10
+                    ],
+                    "fill": "dash"
+                  }
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "yellow",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.WFBPK.Pufferspeicher_2000.Puffertemperaturen.TPA"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "TPA"
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "light-blue",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.WFBPK.Pufferspeicher_2000.Puffertemperaturen.TPE"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "TPE"
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "dark-blue",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 24,
+          "x": 0,
+          "y": 4
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Titelbild.Kesseltemperatur_Istwert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": true,
+            "refCount": 0,
+            "refId": "B",
+            "target": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Aktueller_Wert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": true,
+            "refCount": 0,
+            "refId": "E",
+            "target": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Sollwert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "C",
+            "target": "windhager.UMUMLZ.1_Neubau.Warmwassertemperatur.Aktueller_Wert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "D",
+            "target": "windhager.UMUMLZ.1_Neubau.Warmwassertemperatur.Sollwert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "F",
+            "target": "windhager.WFBPK.Pufferspeicher_2000.Puffertemperaturen.TPA"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "G",
+            "target": "windhager.WFBPK.Pufferspeicher_2000.Puffertemperaturen.TPE"
+          }
+        ],
+        "title": "Temperaturen",
+        "type": "timeseries"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisLabel": "",
+              "axisPlacement": "right",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 12,
+              "gradientMode": "hue",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineInterpolation": "linear",
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": 3600000,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Aktueller_Wert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Vorlauf IST"
+                },
+                {
+                  "id": "custom.lineWidth",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Sollwert"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Vorlauf SOLL"
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.WFBPK.Pufferspeicher_2000.unbekannt.Ruecklauftemp_Sollwert_Waermeerzeuger"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Rücklauf SOLL"
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.WFBPK.Pufferspeicher_2000.unbekannt.Ruecklauftemperatur_Waermeerzeuger"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "Rücklauf IST"
+                },
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "dark-blue",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 24,
+          "x": 0,
+          "y": 13
+        },
+        "id": 17,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "B",
+            "target": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Aktueller_Wert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "E",
+            "target": "windhager.UMUMLZ.1_Neubau.Vorlauftemperatur.Sollwert"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "G",
+            "target": "windhager.WFBPK.Pufferspeicher_2000.unbekannt.Ruecklauftemperatur_Waermeerzeuger"
+          },
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "hide": false,
+            "refCount": 0,
+            "refId": "F",
+            "target": "windhager.WFBPK.Pufferspeicher_2000.unbekannt.Ruecklauftemp_Sollwert_Waermeerzeuger"
+          }
+        ],
+        "title": "Temperaturen",
+        "type": "timeseries"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-GrYlRd",
+              "seriesBy": "max"
+            },
+            "custom": {
+              "axisLabel": "",
+              "axisPlacement": "right",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 25,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineInterpolation": "linear",
+              "lineWidth": 3,
+              "pointSize": 6,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": 3600000,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "%"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 21,
+          "x": 0,
+          "y": 22
+        },
+        "id": 6,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "hidden",
+            "placement": "right"
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Aktuelle_Kesselleistung"
+          }
+        ],
+        "title": "Kesselleistung",
+        "type": "timeseries"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 14,
+          "w": 3,
+          "x": 21,
+          "y": 22
+        },
+        "id": 16,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "8.4.1",
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Infoebene.Anzahl_der_Brennerstarts"
+          }
+        ],
+        "title": "Brennerstarts",
+        "type": "stat"
+      },
+      {
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-GrYlRd"
+            },
+            "custom": {
+              "fillOpacity": 100,
+              "lineWidth": 0,
+              "spanNulls": 3600000
+            },
+            "mappings": [
+              {
+                "options": {
+                  "1": {
+                    "index": 7,
+                    "text": "Selbsttest"
+                  },
+                  "2": {
+                    "index": 8,
+                    "text": "???"
+                  },
+                  "3": {
+                    "color": "green",
+                    "index": 3,
+                    "text": "Standby"
+                  },
+                  "4": {
+                    "color": "#808080",
+                    "index": 4,
+                    "text": "Brenner aus"
+                  },
+                  "5": {
+                    "index": 5,
+                    "text": "Vorspülen"
+                  },
+                  "6": {
+                    "color": "dark-red",
+                    "index": 1,
+                    "text": "Zündphase"
+                  },
+                  "7": {
+                    "color": "orange",
+                    "index": 2,
+                    "text": "Stabilisierung"
+                  },
+                  "8": {
+                    "color": "yellow",
+                    "index": 0,
+                    "text": "Modulationsbetrieb"
+                  },
+                  "17": {
+                    "index": 6,
+                    "text": "Ausbrand"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "windhager.BioWINII.BioWINII.Titelbild.Betriebsphasen"
+              },
+              "properties": [
+                {
+                  "id": "displayName",
+                  "value": "‎"
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 21,
+          "x": 0,
+          "y": 30
+        },
+        "id": 2,
+        "options": {
+          "alignValue": "center",
+          "legend": {
+            "displayMode": "hidden",
+            "placement": "bottom"
+          },
+          "mergeValues": true,
+          "rowHeight": 0,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "graphite",
+              "uid": "ZQHG7L17k"
+            },
+            "refCount": 0,
+            "refId": "A",
+            "target": "windhager.BioWINII.BioWINII.Titelbild.Betriebsphasen"
+          }
+        ],
+        "title": "Betriebsphase",
+        "type": "state-timeline"
+      }
+    ],
+    "refresh": "1m",
+    "schemaVersion": 35,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Windhager",
+    "uid": "zY3U-Y5Vz",
+    "version": 13,
+    "weekStart": ""
+  }
