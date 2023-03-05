@@ -133,7 +133,7 @@ def update_windhager_ip(file_path: str = "/volume1/docker/python/windhager.py") 
 
 def read_metrics_file(file_path: str = "/volume1/docker/python/oids_metrics.txt") -> dict:
     """
-    Read the metrics which shall be read from windhager.
+    Read the metrics which shall be sent to graphite.
 
     Parameters
     ----------
@@ -206,17 +206,13 @@ def main() -> int:
     try:
         response = requests.get(f'http://{WINDHAGER_HOST}/api/1.0/datapoints', auth=HTTPDigestAuth(WINDHAGER_USER, WINDHAGER_PASSWORD), timeout=30)
 
-    except requests.exceptions.ConnectionError:
-        logging.error('Error connecting to given windhager IP! %s', sys.exc_info())
-        update_windhager_ip()  # can be uncommented when using static IPs
-        return 1
-
     except requests.exceptions.ConnectTimeout:
         logging.error('Connection timeout! %s', sys.exc_info())
         return 1
 
     except:
-        logging.error('Unknown exception occured! %s', sys.exc_info())
+        logging.error('Error connecting to given windhager IP! %s', sys.exc_info())
+        update_windhager_ip()  # can be uncommented when using static IPs
         return 1
 
     else:
@@ -226,6 +222,8 @@ def main() -> int:
 
     datapoints = json.loads(response.content)
 
+    # check all received datapoints, if they have a valid metric path provided
+    # by the "oids_metrics" file.
     for datapoint in datapoints:
         if "value" in datapoint:
             if datapoint["OID"] in oids_metrics:

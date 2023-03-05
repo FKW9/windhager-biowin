@@ -291,6 +291,8 @@ windhager.BioWINII.BioWINII.Infoebene.Laufzeit_bis_Wartung;1/60/0/156;/1/60/0/20
 windhager.BioWINII.BioWINII.Infoebene.Aktuelle_Kesselleistung;1/60/0/156;/1/60/0/0/9/0
 windhager.BioWINII.BioWINII.Infoebene.Anzahl_der_Brennerstarts;1/60/0/156;/1/60/0/2/80/0
 windhager.BioWINII.BioWINII.Infoebene.Temperatur_Abgas;1/60/0/156;/1/60/0/0/11/0
+windhager.BioWINII.BioWINII.Infoebene.Brennstoffverbrauch_seit_Befuellung;;/1/60/0/23/100/0
+windhager.BioWINII.BioWINII.Infoebene.Brennstoffverbrauch_gesamt;;/1/60/0/23/103/0
 windhager.BioWINII.BioWINII.Betreiberebene.Betriebsart_Zufuehrung;1/60/0/157;/1/60/0/14/19/0
 windhager.BioWINII.BioWINII.Betreiberebene.Sondenumschaltung;1/60/0/157;/1/60/0/14/21/0
 windhager.BioWINII.BioWINII.Betreiberebene.Zufuehrung_mit_Freigabezeit_Ende;1/60/0/157;/1/60/0/14/10/0
@@ -311,6 +313,8 @@ windhager.BioWINII.BioWINII.Serviceebene.Laufzeit_der_Saugturbine;1/60/0/158;/1/
 windhager.BioWINII.BioWINII.Serviceebene.Zuluftklappe_Laufzeit;1/60/0/158;/1/60/0/14/78/0
 windhager.BioWINII.BioWINII.Serviceebene.Foerderzeit_Zuendphase;1/60/0/158;/1/60/0/12/102/0
 windhager.BioWINII.BioWINII.Serviceebene.Grenzen_fuer_Geblaesedrehzahl_Minimalwert;1/60/0/158;/1/60/0/12/98/0
+windhager.BioWINII.BioWINII.Serviceebene.Brennstoffmenge_Foerderschnecke_Bereich;;/1/60/0/12/100/0
+windhager.BioWINII.BioWINII.Serviceebene.Brennstoffmenge_Foerderschnecke_Istwer;;/1/60/0/12/101/0
 windhager.BioWINII.BioWINII.unbekannt.unbekannt;1/60/0/159;/1/60/0/39/23/0
 windhager.BioWINII.BioWINII.unbekannt.unbekannt;1/60/0/159;/1/60/0/39/67/0
 windhager.BioWINII.BioWINII.unbekannt.unbekannt;1/60/0/159;/1/60/0/39/68/0
