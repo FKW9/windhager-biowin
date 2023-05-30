@@ -2,10 +2,8 @@ import json
 import logging
 import logging.handlers as handlers
 import pickle
-import re
 import socket
 import struct
-import subprocess
 import sys
 import time
 from threading import Timer
@@ -23,7 +21,7 @@ WINDHAGER_HOST     = "192.168.8.74"
 WINDHAGER_PASSWORD = 'vw8LN7L76Qv?'
 WINDHAGER_USER     = 'Service'
 
-GRAPHITE_HOST = '192.168.8.42'  # IP address of the NAS
+GRAPHITE_HOST = 'localhost'     # IP address of the NAS
 GRAPHITE_PORT = 2004            # port for carbon receiver, 2004 is for pickled data
 GRAPHITE_TIMEOUT = 5
 
@@ -131,7 +129,7 @@ def update_windhager_ip(file_path: str = "/volume1/docker/python/windhager.py") 
         f.write(file_contents)
 
 
-def read_metrics_file(file_path: str = "/volume1/docker/python/oids_metrics.txt") -> dict:
+def read_metrics_file(file_path: str = "/volume1/docker/python/oids_metrics_custom.txt") -> dict:
     """
     Read the metrics which shall be sent to graphite.
 

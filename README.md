@@ -8,13 +8,20 @@ This data is then visualized with Grafana.
 
 ### Setup
 
-1. Fill in your Host IPs, passwords and ports for your host machines in the three python files. ALso you must change the paths for the debug files.
+1. Fill in your Host IPs, passwords and ports for your host machines in the three python files. Also you must change the paths for the debug files.
 
 2. Replace the file [```EbenenTexte_de.xml```](EbenenTexte_de.xml) and [```VarIdentTexte_de.xml```](VarIdentTexte_de.xml) with your own. You find them under [http://<WINDHAGER_IP>/res/xml/](http://<WINDHAGER_IP>/res/xml/).
 
 3. To get all OIDS and convert them to a usable graphite metric path, you have to execute the script [```get_all_metrics.py```](get_all_metrics.py) once. This creates/updates the file [```oids_metrics.txt```](oids_metrics.txt), which will be read from the main script.
 
 4. Execute the main script [windhager.py](windhager.py)
+
+Optional script for only requesting specific datapoints (more reliable):
+
+1. Fill in the specific datapoints you want to request in [```oids_metrics_custom.txt```](oids_metrics_custom.txt)
+
+2. Execute the script [windhager_specific.py](windhager_specific.py)
+
 
 ### Loki
 Here I also use Loki to get my logs into Grafana.
